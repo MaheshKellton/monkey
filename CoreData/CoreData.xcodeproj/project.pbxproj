@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E38B0CAA1EAA221700898E43 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		E38CF4961EA8DB530034DE12 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38CF49A1EA8DB530034DE12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E38CF49C1EA8DB530034DE12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 				E38CF49D1EA8DB530034DE12 /* AppDelegate.m */,
 				E38CF49F1EA8DB530034DE12 /* ViewController.h */,
 				E38CF4A01EA8DB530034DE12 /* ViewController.m */,
+				E38B0CAA1EAA221700898E43 /* Constant.h */,
 				E38CF4A21EA8DB530034DE12 /* Main.storyboard */,
 				E38CF4A81EA8DB530034DE12 /* Assets.xcassets */,
 				E38CF4AA1EA8DB530034DE12 /* LaunchScreen.storyboard */,
@@ -518,6 +520,7 @@
 				E38CF4C81EA8DB530034DE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E38CF4C91EA8DB530034DE12 /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +529,7 @@
 				E38CF4CB1EA8DB530034DE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E38CF4CC1EA8DB530034DE12 /* Build configuration list for PBXNativeTarget "CoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +538,7 @@
 				E38CF4CE1EA8DB530034DE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
