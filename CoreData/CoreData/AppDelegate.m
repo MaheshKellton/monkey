@@ -1,7 +1,6 @@
 //
 //  AppDelegate.m
 //  CoreData
-//
 //  Created by mahesh.pal on 4/20/17.
 //  Copyright © 2017 mahesh.pal. All rights reserved.
 //
