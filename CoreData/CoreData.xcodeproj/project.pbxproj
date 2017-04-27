@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30CC9EE1EB210B100E73B86 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30CC9EC1EB210B100E73B86 /* PhotoDetailViewController.swift */; };
+		E30CC9EF1EB210B100E73B86 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30CC9ED1EB210B100E73B86 /* PhotoDetailViewController.xib */; };
 		E38B0CAF1EAA27D700898E43 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38B0CAD1EAA27D700898E43 /* PhotoViewController.m */; };
 		E38B0CB01EAA27D700898E43 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38B0CAE1EAA27D700898E43 /* PhotoViewController.xib */; };
 		E38CF49B1EA8DB530034DE12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E38CF49A1EA8DB530034DE12 /* main.m */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E30CC9EB1EB210B100E73B86 /* CoreData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreData-Bridging-Header.h"; sourceTree = "<group>"; };
+		E30CC9EC1EB210B100E73B86 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		E30CC9ED1EB210B100E73B86 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
 		E38B0CAA1EAA221700898E43 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		E38B0CAC1EAA27D700898E43 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		E38B0CAD1EAA27D700898E43 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
@@ -92,6 +97,9 @@
 				E38B0CAC1EAA27D700898E43 /* PhotoViewController.h */,
 				E38B0CAD1EAA27D700898E43 /* PhotoViewController.m */,
 				E38B0CAE1EAA27D700898E43 /* PhotoViewController.xib */,
+				E30CC9EC1EB210B100E73B86 /* PhotoDetailViewController.swift */,
+				E30CC9ED1EB210B100E73B86 /* PhotoDetailViewController.xib */,
+				E30CC9EB1EB210B100E73B86 /* CoreData-Bridging-Header.h */,
 			);
 			name = PhotoView;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 					E38CF4951EA8DB530034DE12 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 85C66DK85D;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					E38CF4B11EA8DB530034DE12 = {
@@ -270,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30CC9EF1EB210B100E73B86 /* PhotoDetailViewController.xib in Resources */,
 				E38CF4AC1EA8DB530034DE12 /* LaunchScreen.storyboard in Resources */,
 				E38B0CB01EAA27D700898E43 /* PhotoViewController.xib in Resources */,
 				E38CF4A91EA8DB530034DE12 /* Assets.xcassets in Resources */,
@@ -298,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30CC9EE1EB210B100E73B86 /* PhotoDetailViewController.swift in Sources */,
 				E38CF4A71EA8DB530034DE12 /* CoreData.xcdatamodeld in Sources */,
 				E38CF4A11EA8DB530034DE12 /* ViewController.m in Sources */,
 				E38CF49E1EA8DB530034DE12 /* AppDelegate.m in Sources */,
@@ -449,11 +460,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 85C66DK85D;
 				INFOPLIST_FILE = CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kellton.CoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreData/CoreData-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -461,17 +476,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 85C66DK85D;
 				INFOPLIST_FILE = CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Kellton.CoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreData/CoreData-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E38CF4CA1EA8DB530034DE12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 85C66DK85D;
 				INFOPLIST_FILE = CoreDataTests/Info.plist;
@@ -485,6 +504,7 @@
 		E38CF4CB1EA8DB530034DE12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 85C66DK85D;
 				INFOPLIST_FILE = CoreDataTests/Info.plist;
@@ -498,6 +518,7 @@
 		E38CF4CD1EA8DB530034DE12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 85C66DK85D;
 				INFOPLIST_FILE = CoreDataUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -510,6 +531,7 @@
 		E38CF4CE1EA8DB530034DE12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 85C66DK85D;
 				INFOPLIST_FILE = CoreDataUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
